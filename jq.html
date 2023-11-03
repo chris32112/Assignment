@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Button click</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h1 id="myText">Simple jQuery button</h1>
+  <button id="fadeinButton">fade in</button>
+  <button id="fadeoutButton">fade out</button>
+  <button id="slideupButton">slide up </button>
+  <button id="slidedownButton">slide down </button>
+  
+ 
+  <script>
+    $(document).ready(function() {
+      $("#fadeinButton").click(function() {
+        $("#myText").fadeIn("new content");
+      });
+
+      $("#fadeoutButton").click(function() {
+        $("#myText").fadeOut();
+      });
+
+      $("#slideupButton").click(function() {
+        $("#myText").slideUp();
+      });
+	  $("#slidedownButton").click(function() {
+        $("#myText").slideDown();
+		});
+		    });
+  </script>
+</body>
+</html>
